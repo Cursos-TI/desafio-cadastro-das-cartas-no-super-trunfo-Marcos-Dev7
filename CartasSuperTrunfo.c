@@ -25,7 +25,8 @@ int main() {
     scanf("%s", cdg_carta1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", nome_cidade1);
+    fgets(nome_cidade1, 30, stdin);
+    nome_cidade1[strcspn(nome_cidade1, "\n")] = 0;
 
     printf("Digite o número da população: \n");
     scanf("%d", &populacao1);
@@ -47,7 +48,8 @@ int main() {
     scanf("%s", cdg_carta2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", nome_cidade2);
+    fgets(nome_cidade2, 30, stdin);
+    nome_cidade2[strcspn(nome_cidade2, "\n")] = 0;
 
     printf("Digite o número da população: \n");
     scanf("%d", &populacao2);
@@ -63,7 +65,7 @@ int main() {
 
     // Exibição dos Dados das Cartas:
     printf("Carta 1: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %f\nPIB: %f bilhões de reais\nNúmero de Pontos Turisticos: %d\n", estado1, cdg_carta1, nome_cidade1, populacao1, area1, pib1, pontos_turisticos1);
-    printf("Carta 1: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %f\nPIB: %f bilhões de reais\nNúmero de Pontos Turisticos: %d\n", estado2, cdg_carta2, nome_cidade2, populacao2, area1, pib2, pontos_turisticos2);
+    printf("Carta 2: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %f\nPIB: %f bilhões de reais\nNúmero de Pontos Turisticos: %d\n", estado2, cdg_carta2, nome_cidade2, populacao2, area2, pib2, pontos_turisticos2);
 
     return 0;
 }
