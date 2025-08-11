@@ -46,7 +46,7 @@ int main() {
     // Cálculos
 
     densidade_populacional1 = (float)(populacao1 / area1);
-    pib_per_capita1 = (float)pib1 / populacao1;
+    pib_per_capita1 = pib1 / populacao1;
 
     // ---------------------------------------------------
     // Cadastro da Carta2:
@@ -82,7 +82,7 @@ int main() {
     pib_per_capita2 = pib2 / populacao2;
 
     // Exibição dos Dados das Cartas:
-    printf("Carta 1: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turisticos: %d\nDensidade Populacional: %.2ff\nPIB per Capita: %.2f\n", estado1, cdg_carta1, nome_cidade1, populacao1, area1, pib1, pontos_turisticos1, densidade_populacional1, pib_per_capita1);
+    printf("Carta 1: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turisticos: %d\nDensidade Populacional: %.2f\nPIB per Capita: %.2f\n", estado1, cdg_carta1, nome_cidade1, populacao1, area1, pib1, pontos_turisticos1, densidade_populacional1, pib_per_capita1);
     printf("Carta 2: \nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turisticos: %d\nDensidade Populacional: %.2f\nPIB per Capita: %.2f\n", estado2, cdg_carta2, nome_cidade2, populacao2, area2, pib2, pontos_turisticos2, densidade_populacional2, pib_per_capita2);
 
     return 0;
